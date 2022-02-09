@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/hitMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/amarante"
+        android:text="Hit me!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/reset"
+        android:layout_width="217dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/clipart2003527"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:text="RESET"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creations" />
+
+    <TextView
+        android:id="@+id/creations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/amarante"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/creats"
+        app:layout_constraintStart_toStartOf="@+id/creats"
+        app:layout_constraintTop_toBottomOf="@+id/creats" />
+
+    <TextView
+        android:id="@+id/visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/amarante"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/visibles"
+        app:layout_constraintStart_toStartOf="@+id/visibles"
+        app:layout_constraintTop_toBottomOf="@+id/visibles" />
+
+    <TextView
+        android:id="@+id/hitCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/amarante"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/hits"
+        app:layout_constraintStart_toStartOf="@+id/hits"
+        app:layout_constraintTop_toBottomOf="@+id/hits" />
+
+    <TextView
+        android:id="@+id/hits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Hits"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/visibles"
+        app:layout_constraintTop_toBottomOf="@+id/hitMe" />
+
+    <TextView
+        android:id="@+id/creats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creations"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/visibles"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hits" />
+
+    <TextView
+        android:id="@+id/visibles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visibles"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/hits"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/creats"
+        app:layout_constraintTop_toTopOf="@+id/creats" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.25"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
